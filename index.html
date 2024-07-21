@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      var contador = 0;
+      function cantidad() {
+        alert(contador);
+      }
+      var temporizador = setTimeout("cantidad()", 5000);
+
+      function contar(cual) {
+        if (cual == "pinchame") {
+          contador = contador + 1;
+        } else {
+          contador = contador - 1;
+        }
+        if (document.getElementById("b1").value == "pinchame") {
+          document.getElementById("b1").value = "no me pinches";
+          document.getElementById("b2").value = "pinchame";
+        } else {
+          document.getElementById("b1").value = "pinchame";
+          document.getElementById("b2").value = "no me pinches";
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="padding: 20px; text-align: center">
+      Tienes 5 segundos para pinchar en el boton correcto, ¡A ver cuántas veces
+      lo consigues!
+    </h1>
+    <br />
+    <div style="text-align: center">
+      <input
+        type="button"
+        name="b1"
+        id="b1"
+        value="no me pinches"
+        onclick="contar(this.value)"
+      />
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <input
+        type="button"
+        name="b2"
+        id="b2"
+        value="pinchame"
+        onclick="contar(this.value)"
+      />
+    </div>
+  </body>
+</html>

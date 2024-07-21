@@ -1,1 +1,3 @@
-# Iintervalos_de_tiempo_JS
+# Intervalos_de_tiempo_JS
+
+En este ejemplo vamos a usar los temporizadores en nuestra página web para controlar la ejecución de código JavaScript.Para ello crearemos una web en la que solo pondremos dos botones: uno de estos botones tendrá un texto de ‘pínchame’ y el otro ‘no me pinches’. Cada vez que el usuario haga clic en el botón ‘pínchame’ incrementaremos en uno un contador y cada vez que haga clic en ‘no me pinches’ restaremos uno al valor del contador. Para hacerlo más entretenido, cada vez que se pinche en cual-quier botón cambiaremos el texto de ambos botones.Nada más cargar la página, usaremos un temporizador que lanzaremos para que a los cinco segundos nos muestre el valor del contador.
